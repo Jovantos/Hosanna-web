@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hosanna Secondary School</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-content {
+            padding-top: 100px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-info {
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: #1a237e;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .submit-btn:hover {
+            background-color: #283593;
+        }
+        
+        .map-container {
+            margin-top: 2rem;
+            height: 400px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .download-section {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: #1a237e;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 1rem;
+        }
+        
+        .download-btn:hover {
+            background-color: #283593;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hosanna Secondary School</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-content">
+        <div class="container">
+            <h1>Contact Us</h1>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>School Location</h2>
+                    <p>123 Education Street</p>
+                    <p>Kampala, Uganda</p>
+                    <p>P.O. Box 12345</p>
+                </div>
+                
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Phone: +256 123 456 789</p>
+                    <p>Email: info@hosannasecondary.ac.ug</p>
+                    <p>Office Hours: 8:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+
+            <section class="contact-form">
+                <h2>Send us a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+
+            <section class="map-container">
+                <!-- Replace with actual Google Maps embed code -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7538482380953!2d32.5821!3d0.3476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjAnNTEuNCJOIDMywrAzNCc1NS42IkU!5e0!3m2!1sen!2sug!4v1234567890"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </section>
+
+            <section class="download-section">
+                <h2>Download School Information</h2>
+                <a href="#" class="download-btn">Download Prospectus</a>
+                <a href="#" class="download-btn">Download Application Form</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hosanna Secondary School. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Hosanna Secondary School</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .admissions-content {
+            padding-top: 100px;
+        }
+        
+        .admission-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .fee-structure table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .fee-structure th, .fee-structure td {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        .fee-structure th {
+            background-color: #1a237e;
+            color: white;
+        }
+        
+        .application-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .submit-btn {
+            background-color: #1a237e;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .submit-btn:hover {
+            background-color: #283593;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hosanna Secondary School</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html" class="active">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admissions-content">
+        <div class="container">
+            <h1>Admissions</h1>
+            
+            <section class="admission-section">
+                <h2>Admission Requirements</h2>
+                <ul>
+                    <li>Completed application form</li>
+                    <li>Birth certificate</li>
+                    <li>Previous school records</li>
+                    <li>Passport-sized photographs</li>
+                    <li>Medical examination report</li>
+                    <li>Transfer letter (if applicable)</li>
+                </ul>
+            </section>
+
+            <section class="admission-section">
+                <h2>Enrollment Procedures</h2>
+                <ol>
+                    <li>Submit completed application form with required documents</li>
+                    <li>Attend an interview with parents/guardians</li>
+                    <li>Complete entrance examination</li>
+                    <li>Receive admission letter if successful</li>
+                    <li>Pay required fees</li>
+                    <li>Complete registration process</li>
+                </ol>
+            </section>
+
+            <section class="admission-section fee-structure">
+                <h2>Fee Structure</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tuition Fee (per term)</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>Development Fee (annual)</td>
+                            <td>$200</td>
+                        </tr>
+                        <tr>
+                            <td>Library Fee (annual)</td>
+                            <td>$50</td>
+                        </tr>
+                        <tr>
+                            <td>Sports Fee (annual)</td>
+                            <td>$30</td>
+                        </tr>
+                        <tr>
+                            <td>Laboratory Fee (annual)</td>
+                            <td>$100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="admission-section">
+                <h2>Application Form</h2>
+                <form class="application-form">
+                    <div class="form-group">
+                        <label for="student-name">Student's Full Name</label>
+                        <input type="text" id="student-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="grade">Grade Applying For</label>
+                        <select id="grade" required>
+                            <option value="">Select Grade</option>
+                            <option value="9">Grade 9</option>
+                            <option value="10">Grade 10</option>
+                            <option value="11">Grade 11</option>
+                            <option value="12">Grade 12</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="parent-name">Parent/Guardian Name</label>
+                        <input type="text" id="parent-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hosanna Secondary School. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
